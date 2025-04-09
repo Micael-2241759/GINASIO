@@ -1,0 +1,311 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #000;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav img {
+    width: 180px;
+    height: 80px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e60000;
+}
+
+.cta {
+    background-color: #e60000;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #cc0000;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+#menu-toggle:checked + .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 1rem 2rem;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.mobile-menu a:hover {
+    color: #e60000;
+}
+
+.imagemPrincipal img {
+    width: 100%;
+    height: auto;
+}
+
+.container, .informacao {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.container img, .informacao img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text, .text1 {
+    max-width: 50%;
+    text-align: left;
+    padding: 20px;
+}
+
+.filosofia {
+    padding: 50px 20px;
+    background: #ca1919;
+    text-align: center;
+    color: #ffffff;
+}
+
+.valores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.valor p {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.formulario-inscricao {
+    background: #f9f9f9;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-inscricao h2 {
+    color: #ca2929;
+    margin-bottom: 20px;
+}
+
+.formulario-inscricao form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-inscricao label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.formulario-inscricao input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.formulario-inscricao button {
+    padding: 10px;
+    background-color: #ca2929;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario-inscricao button:hover {
+    background-color: #ff0000; 
+}
+
+footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container, .informacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container img, .informacao img {
+        max-width: 100%;
+    }
+
+    .text, .text1 {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .nav-links, .cta {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+.footer {
+    background-color: #000000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer p,h1{
+    color: #f4f4f4;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+  }
+  
+  .footer-section h3 {
+    border-bottom: 2px solid #fd0000;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 21px;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+  }
+  
+  .social-links a {
+    margin-right: 20px;
+    display: inline-block;
+  }
+  
+  .social-links img {
+    width: 29px;
+    height: 29px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+    margin-top: 15px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+  }
